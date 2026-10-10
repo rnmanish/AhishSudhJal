@@ -1,0 +1,8 @@
+export default function HomePage() {
+  return (
+    <main style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>आशीष शुद्ध जल (Ashish Sudh Jal)</h1>
+      <p>सरसर, सिवान, बिहार</p>
+    </main>
+  );
+}
