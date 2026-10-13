@@ -142,3 +142,17 @@ Before completing any task, an agent must verify:
 - [ ] Did `npm run lint` pass with 0 errors and 0 warnings across `src/` and `tests/`?
 - [ ] Did `npm test` pass with 100% of test suites green?
 - [ ] Did `npm run build` succeed cleanly?
+
+---
+
+## 4. Phase-Specific Quality Milestones & Scheduled Reminders
+
+> **Persistent Directive:** When assisting the user in future sessions, the assistant must automatically consult these reminders and proactively suggest/implement the corresponding checks at each milestone:
+
+| Milestone / Phase | Required Action / Suggestion | Purpose & Implementation |
+| :--- | :--- | :--- |
+| **Phase 2 (T-09: DI Wiring)** | **Enforce Presentation Layer Isolation in ESLint** | Add `no-restricted-imports` rule in `.eslintrc.json` blocking `src/presentation/**` from importing directly from `src/infrastructure/repositories/*`. Forces all UI to consume repositories exclusively via `container.ts` and domain interfaces. |
+| **Phase 3 (T-11/T-12: UI Tokens & Components)** | **Duplicate Code Detection (`jscpd`)** | Add zero-dependency CLI `npx jscpd src/` to CI to prevent duplicate copy-pasted UI, formatting, or pricing calculations across components and hooks. |
+| **Phase 4 (T-17: Wizard & Feature Modules)** | **Dead Code & Unused Export Pruner (`knip`)** | Run `npx knip` to identify any dead exported functions, unused types, or orphaned files before proceeding to assembly. |
+| **Phase 5 (T-22: Launch, Auth & Deployment)** | **SAST & SonarCloud Audit + Test Coverage Gate** | Conduct input security audit on Firebase Auth handlers, check for ReDoS in phone/text regexes, and verify in-memory test coverage via `vitest run --coverage`. |
+
