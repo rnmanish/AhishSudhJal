@@ -10,4 +10,7 @@ export interface IPreferenceRepository {
   setLanguage(lang: string): void;
   getSavedCustomerDetails(): SavedCustomerDetails | null;
   saveCustomerDetails(details: SavedCustomerDetails): void;
+  clearCustomerDetails(): void;
+  clearPreferences(): void;
 }
+
