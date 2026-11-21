@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "title": "Ashish Sudh Jal | Pure RO Drinking Water in Sarsar, Siwan",
+    "description": "Doorstep delivery of 20L RO mineral water jars and packaged drinking water across Sarsar, Puraina, and Siwan villages. Drop-by-drop purity and trust.",
+    "plantLocation": "Sarsar, Siwan, Bihar"
+  },
+  "brand": {
+    "name": "Ashish Sudh Jal",
+    "nameHindi": "आशीष शुद्ध जल",
+    "tagline": "Purity and Trust in Every Drop",
+    "plantAddress": "Village + Post Office - Sarsar, Ward No-1, Dist - Siwan, Bihar - 841226",
+    "plantLocation": "Sarsar, Siwan, Bihar",
+    "hotline": "+91 82358 82384",
+    "hotlineNumber": "8235882384",
+    "whatsappNumber": "918235882384",
+    "operatingHours": "6:00 AM – 8:00 PM Daily (7 Days a Week)",
+    "copyright": "© {year} Ashish Sudh Jal. All rights reserved."
+  },
+  "stats": {
+    "customersCount": "500+",
+    "customersLabel": "Happy Families & Customers",
+    "purityTdsRange": "100-150 PPM",
+    "purityLabel": "Ideal Sweet Drinking TDS",
+    "villagesCoveredCount": "15+",
+    "villagesLabel": "Villages Covered Promptly"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products & Pricing",
+    "tdsChecker": "TDS Checker",
+    "booking": "Order Online",
+    "coverage": "Delivery Areas",
+    "callNow": "Call Us",
+    "whatsappOrder": "WhatsApp Order",
+    "toggleLanguageAria": "भाषा बदलें (Switch to Hindi)"
+  },
+  "hero": {
+    "badge": "Direct Doorstep Delivery from Sarsar Water Plant",
+    "title": "Clean, Cool & Mineral RO Drinking Water",
+    "highlight": "Right to Your Doorstep",
+    "subtitle": "Fast, dependable doorstep supply of 20L RO jars and packaged bottles across Sarsar, Puraina, Chhap, and 15+ surrounding villages.",
+    "orderCta": "Order Instantly on WhatsApp",
+    "checkVillageCta": "Check Your Village Delivery",
+    "callCta": "Call Now (82358 82384)",
+    "deliveryPill": "Delivery within 30 mins to 2 hours across Sarsar & 15 villages",
+    "trustFeature1": "Multi-stage RO & UV Purification",
+    "trustFeature2": "Controlled TDS 100-150 PPM (Healthy Range)",
+    "trustFeature3": "Sanitized Food-Grade Jars & Dispensers"
+  },
+  "products": {
+    "sectionBadge": "Drinking Water Products",
+    "sectionTitle": "Fresh & Hygienic RO Water Options",
+    "sectionSubtitle": "Tailored solutions for daily homes, commercial shops, and wedding or community gatherings.",
+    "jarNormal": {
+      "name": "20L Normal RO Water Jar",
+      "shortName": "20L Normal Jar",
+      "desc": "Ambient temperature pure drinking water purified via multi-stage reverse osmosis and UV chambers.",
+      "priceDisplay": "₹30",
+      "recurringDisplay": "₹25",
+      "recurringBadge": "₹5 recurring discount (₹25 per jar on subscription)",
+      "depositBadge": "₹150 refundable deposit (first order only)",
+      "depositNote": "₹150 refundable deposit on first order for jar & dispenser tap. ₹0 for existing customers.",
+      "features": [
+        "5-Stage advanced RO + UV treatment",
+        "Balanced TDS 100-150 PPM (sweet & light taste)",
+        "100% BPA-free food-grade sanitized jar",
+        "Free doorstep delivery in 30 to 60 minutes"
+      ]
+    },
+    "jarChilled": {
+      "name": "20L Chilled RO Water Jar",
+      "shortName": "20L Chilled Jar",
+      "desc": "Temperature-controlled chilled RO water for the summer heat. Exact same pure mineral balance, refreshingly cold.",
+      "priceDisplay": "₹30",
+      "recurringDisplay": "₹25",
+      "recurringBadge": "₹5 recurring discount (₹25 per jar on subscription)",
+      "depositBadge": "₹150 refundable deposit (first order only)",
+      "depositNote": "₹150 refundable deposit on first order for jar & dispenser tap. ₹0 for existing customers.",
+      "features": [
+        "Optimal chilled drinking temperature",
+        "Perfect for intense summer days & ceremonies",
+        "Clean food-grade insulated & sanitized jar",
+        "Prompt delivery across Sarsar & nearby villages"
+      ]
+    },
+    "bulkBottles": {
+      "name": "Packaged Water Bottles (250ml / 500ml / 1L)",
+      "shortName": "Packaged Bottles",
+      "desc": "Available in sealed carton packaging. Safe, hygienic, and convenient for meetings, shops, and travel.",
+      "priceDisplay": "₹30",
+      "depositBadge": "₹0 Deposit (No deposit required)",
+      "depositNote": "Zero security deposit applies to packaged bottle cartons.",
+      "features": [
+        "250ml, 500ml, and 1 Litre carton options",
+        "Hermetically sealed food-grade packaging",
+        "Special wholesale rural pricing for shops",
+        "Direct bulk venue delivery available"
+      ]
+    },
+    "eventSupply": {
+      "name": "Wedding & Social Event Bulk Water Supply",
+      "shortName": "Event Bulk Supply",
+      "desc": "Unlimited fresh RO water jars and dispensers for weddings, receptions, and large community functions.",
+      "priceDisplay": "₹30",
+      "depositBadge": "₹0 Deposit (Zero Deposit on Events)",
+      "depositNote": "Zero deposit is charged on jars or tap dispensers for wedding and celebration orders.",
+      "features": [
+        "High-capacity 20L jars and dispenser taps",
+        "Guaranteed pre-event delivery to venue",
+        "Zero (₹0) deposit on jars & equipment",
+        "Free volume estimation based on guest count"
+      ]
+    },
+    "perJar": "per jar",
+    "orderOnWhatsApp": "Order via WhatsApp",
+    "dispenserIncluded": "Dispenser Tap Included",
+    "refundableDepositNotice": "Deposit is 100% refundable upon return"
+  },
+  "tds": {
+    "sectionBadge": "Water Purity & Health Analysis",
+    "sectionTitle": "Check Your Home Water TDS Level",
+    "sectionSubtitle": "Evaluate your drinking water safety according to World Health Organization (WHO) and BIS guidelines.",
+    "sliderLabel": "Select your water TDS reading (PPM):",
+    "sourceSelectLabel": "Select your primary water source:",
+    "ppmUnit": "PPM (Parts Per Million)",
+    "sources": {
+      "chapakal": "Handpump (Chapakal)",
+      "submersible": "Submersible Borewell",
+      "nalJal": "Government Nal-Jal Supply",
+      "tanker": "Water Tanker Supply"
+    },
+    "levels": [
+      {
+        "range": "50 - 150",
+        "maxPpm": 150,
+        "label": "Ideal RO Drinking Water (Ashish Sudh Jal Standard)",
+        "badge": "Excellent (Ideal)",
+        "description": "Optimal sweet taste and balanced natural minerals. Best quality for family health.",
+        "recommendation": "Optimal drinking water for daily family health.",
+        "colorHex": "#10b981"
+      },
+      {
+        "range": "150 - 250",
+        "maxPpm": 250,
+        "label": "Good Drinking Water",
+        "badge": "Good",
+        "description": "Safe drinking water with moderate mineral content.",
+        "recommendation": "Acceptable drinking quality.",
+        "colorHex": "#06b6d4"
+      },
+      {
+        "range": "250 - 300",
+        "maxPpm": 300,
+        "label": "Fair Drinking Water",
+        "badge": "Fair",
+        "description": "Upper boundary for direct consumption. Noticeably heavier mineral taste.",
+        "recommendation": "Acceptable, but RO purification is recommended for longevity.",
+        "colorHex": "#eab308"
+      },
+      {
+        "range": "300 - 500",
+        "maxPpm": 500,
+        "label": "Hard / High Minerals",
+        "badge": "Hard (Unsafe)",
+        "description": "Noticeable heavy taste, scaling on boiling utensils. Heavy for digestion.",
+        "recommendation": "RO purification strongly recommended before drinking.",
+        "colorHex": "#f59e0b"
+      },
+      {
+        "range": "500+",
+        "maxPpm": 9999,
+        "label": "Unsafe / High Contamination",
+        "badge": "Hazardous",
+        "description": "Unsafe for direct drinking. High dissolved solids, risk of stomach ailments.",
+        "recommendation": "Immediate RO purification required before consumption.",
+        "colorHex": "#ef4444"
+      }
+    ],
+    "asjQualityNotice": "At Ashish Sudh Jal, we calibrate our water TDS daily (100–150 PPM) with digital meters to ensure you and your family receive sweet, pure, and healthy water."
+  },
+  "wizard": {
+    "sectionBadge": "Easy 4-Step Booking Wizard",
+    "sectionTitle": "Seamless Online Water Ordering",
+    "sectionSubtitle": "Choose your product, enter delivery details, and submit directly through WhatsApp.",
+    "steps": {
+      "step1": "Step 1",
+      "step2": "Step 2",
+      "step3": "Step 3",
+      "step4": "Step 4"
+    },
+    "stepNames": {
+      "serviceSelect": "Select Service",
+      "quantityDetails": "Quantity & Plan",
+      "customerDetails": "Delivery Details",
+      "reviewSummary": "Order Summary"
+    },
+    "services": {
+      "jarNormal": {
+        "title": "20L Normal RO Jar",
+        "subtitle": "For daily household and commercial drinking (₹30 / ₹25 sub)"
+      },
+      "jarChilled": {
+        "title": "20L Chilled RO Jar",
+        "subtitle": "Refreshing chilled drinking water for summer (₹30 / ₹25 sub)"
+      },
+      "bulkBottles": {
+        "title": "Packaged Bottles Carton",
+        "subtitle": "250ml / 500ml / 1L sealed bottles for shops and gatherings"
+      },
+      "eventSupply": {
+        "title": "Event & Wedding Supply",
+        "subtitle": "Bulk jars & dispensers with zero security deposit"
+      }
+    },
+    "form": {
+      "chooseServiceHeading": "Choose your desired water supply service:",
+      "quantityHeading": "Select quantity and delivery preferences:",
+      "jarQuantityLabel": "Number of 20L Jars:",
+      "recurringCheckboxLabel": "Subscribe for regular delivery (Save ₹5 per jar)",
+      "recurringSavingsText": "Enjoy special ₹25 rate on regular recurring delivery!",
+      "firstOrderCheckboxLabel": "Is this your first order with us?",
+      "firstOrderDepositInfo": "₹150 refundable deposit applies for jar and dispenser tap on first order.",
+      "bottleQuantityLabel": "Number of Cartons (24 bottles per carton):",
+      "bottleContactNote": "Special volume discounts apply for bulk carton orders.",
+      "eventGuestsLabel": "Estimated number of guests attending:",
+      "eventTypeLabel": "Type of Event:",
+      "eventEstimatedVolume": "Estimated Water Required:",
+      "customerDetailsHeading": "Enter delivery address and contact information:",
+      "fullNameLabel": "Full Name:",
+      "fullNamePlaceholder": "e.g. Ramesh Kumar",
+      "phoneLabel": "10-Digit Mobile Number:",
+      "phonePlaceholder": "e.g. 9876543210",
+      "villageLabel": "Your Village (Delivery Location):",
+      "selectVillagePlaceholder": "Select your village...",
+      "landmarkLabel": "Landmark / Detailed Address (Optional):",
+      "landmarkPlaceholder": "e.g. Near Shiv Temple, Main Road",
+      "saveDetailsLabel": "Save my details on this device for faster future orders"
+    },
+    "eventTypes": {
+      "wedding": "Wedding / Reception",
+      "birthday": "Birthday / Anniversary Celebration",
+      "religious": "Puja / Religious Ceremony",
+      "corporate": "Office / Conference / Meeting",
+      "other": "Other Social Gathering"
+    },
+    "summary": {
+      "heading": "Order Review & Payment Details",
+      "selectedService": "Selected Service:",
+      "quantity": "Total Quantity:",
+      "unitPrice": "Unit Price:",
+      "baseAmount": "Water Charge:",
+      "recurringSavings": "Recurring Subscriber Savings:",
+      "depositAmount": "Refundable Security Deposit:",
+      "totalPayable": "Total Payable Amount:",
+      "codNotice": "Payment is accepted via Cash or UPI at the time of doorstep delivery.",
+      "deliveryTo": "Delivery To:",
+      "deliverySla": "Estimated Delivery Time:",
+      "eventZeroDepositNotice": "Zero (₹0) security deposit is charged on jars or dispensers for events.",
+      "submitWhatsAppBtn": "Send Order on WhatsApp",
+      "backBtn": "Back",
+      "nextBtn": "Next"
+    },
+    "validation": {
+      "serviceRequired": "Please select a service before proceeding.",
+      "quantityMin": "Quantity must be at least 1 jar or carton.",
+      "guestsMin": "Please enter at least 10 estimated guests.",
+      "nameRequired": "Please enter your full name (minimum 2 characters).",
+      "phoneInvalid": "Please enter a valid 10-digit Indian mobile number (e.g. 98XXXXXXXX).",
+      "villageRequired": "Please select your village from the list.",
+      "landmarkRequired": "Please enter a landmark to assist our delivery driver."
+    }
+  },
+  "villageChecker": {
+    "sectionBadge": "Delivery Coverage Network",
+    "sectionTitle": "Check If We Deliver to Your Village",
+    "sectionSubtitle": "Prompt, scheduled delivery across Sarsar, Puraina, Chhap, and 15+ villages in Siwan.",
+    "searchPlaceholder": "Enter your village name or pincode (e.g. Sarsar, Puraina, 841226)...",
+    "searchBtn": "Check",
+    "serviceableBadge": "Delivery Available",
+    "unserviceableBadge": "Currently Unavailable",
+    "plantDistanceLabel": "Distance from Sarsar Plant:",
+    "deliverySlaLabel": "Estimated Delivery Time:",
+    "freeDeliveryNotice": "Doorstep delivery is 100% free of charge in this village.",
+    "unserviceableNotice": "We do not currently have a daily scheduled route to this area, but bulk or event delivery may be arranged upon request.",
+    "customVillageWhatsAppCta": "Chat on WhatsApp for Special Delivery",
+    "coveredVillagesHeading": "Currently Covered Top 15 Villages:"
+  },
+  "map": {
+    "sectionBadge": "Plant Location & Directions",
+    "sectionTitle": "Visit Our Modern RO Processing Plant in Sarsar",
+    "sectionSubtitle": "Pick up water jars directly from the plant or visit to inspect our multi-stage purification facility.",
+    "plantTitle": "Ashish Sudh Jal RO Processing Plant",
+    "getDirectionsBtn": "Get Directions on Google Maps",
+    "callPlantBtn": "Call Plant Directly",
+    "openingHoursTitle": "Plant Operating Hours:"
+  },
+  "trustBadgesSectionTitle": "Why Siwan Trusts Ashish Sudh Jal",
+  "trustBadges": [
+    {
+      "id": "ro-uv",
+      "icon": "shield-check",
+      "title": "Multi-Stage RO & UV Purification",
+      "desc": "State-of-the-art reverse osmosis and UV chambers eliminate all biological and chemical contaminants."
+    },
+    {
+      "id": "controlled-tds",
+      "icon": "droplets",
+      "title": "Optimal TDS 100-150 PPM",
+      "desc": "Preserves essential minerals to support balanced hydration, superior taste, and overall wellness."
+    },
+    {
+      "id": "sanitized-jars",
+      "icon": "sparkles",
+      "title": "Food-Grade Sanitized Jars",
+      "desc": "Multi-stage high-pressure sanitization before every refill ensures zero bacterial residue."
+    },
+    {
+      "id": "doorstep-delivery",
+      "icon": "truck",
+      "title": "Prompt Doorstep Delivery",
+      "desc": "Dependable delivery within 30 minutes to 2 hours across Sarsar, Puraina, and surrounding areas."
+    }
+  ],
+  "faqsSection": {
+    "sectionBadge": "Frequently Asked Questions",
+    "sectionTitle": "Common Questions & Clear Answers",
+    "sectionSubtitle": "Everything you need to know about Ashish Sudh Jal purity, delivery, and ordering."
+  },
+  "faqs": [
+    {
+      "id": "tds-quality",
+      "category": "quality",
+      "question": "What is the TDS level of Ashish Sudh Jal water?",
+      "answer": "Our water TDS is strictly maintained between 100–150 PPM. This retains essential healthy minerals and provides a naturally sweet, refreshing taste."
+    },
+    {
+      "id": "delivery-charges",
+      "category": "delivery",
+      "question": "Are there any extra delivery or transport charges?",
+      "answer": "Not at all! Doorstep delivery is 100% free across Sarsar, Puraina, Chhap, Nathu Chhap, and all 15+ serviceable villages."
+    },
+    {
+      "id": "security-deposit",
+      "category": "pricing",
+      "question": "Do new customers need to pay a security deposit?",
+      "answer": "For the first order only, a refundable deposit of ₹150 is collected for the 20L jar and dispenser tap. This amount is 100% refundable anytime. Regular subscribers never pay deposit."
+    },
+    {
+      "id": "bulk-events",
+      "category": "events",
+      "question": "How do I book bulk water supply for weddings and social events?",
+      "answer": "You can book through our Event Booking Wizard or message us on WhatsApp with the date and guest count. Bulk event orders enjoy zero (₹0) jar deposit with guaranteed on-time delivery."
+    },
+    {
+      "id": "delivery-timings",
+      "category": "delivery",
+      "question": "How soon is water delivered after placing an order?",
+      "answer": "Within 30–45 minutes near our Sarsar plant, and within 1–2 hours for surrounding villages. Regular subscribers receive scheduled morning deliveries."
+    },
+    {
+      "id": "chilled-vs-normal",
+      "category": "products",
+      "question": "Is chilled RO drinking water available during summers?",
+      "answer": "Yes! We operate temperature-controlled chilling units. You can select either Normal or Chilled RO water at the exact same transparent price (₹30 single / ₹25 recurring)."
+    }
+  ],
+  "testimonialsSection": {
+    "sectionBadge": "Customer Reviews",
+    "sectionTitle": "Trusted by Families Across Siwan & Sarsar",
+    "sectionSubtitle": "Read what our regular subscribers have to say about our water purity and delivery service."
+  },
+  "testimonials": [
+    {
+      "id": "ramesh-sarsar",
+      "name": "Ramesh Kumar",
+      "nameHindi": "रमेश कुमार",
+      "village": "Sarsar",
+      "villageHindi": "सरसर",
+      "rating": 5,
+      "verified": true,
+      "quote": "Our handpump water was very heavy with yellow scaling. Since switching to Ashish Sudh Jal, the water is sweet, light, and digestible. Doorstep delivery is remarkably consistent."
+    },
+    {
+      "id": "sunita-puraina",
+      "name": "Sunita Devi",
+      "nameHindi": "सुनीता देवी",
+      "village": "Puraina",
+      "villageHindi": "पुरैना",
+      "rating": 5,
+      "verified": true,
+      "quote": "Getting chilled, hygienic water delivered directly to our village home is a huge blessing. Whether for daily needs or family functions, one WhatsApp message brings the water promptly."
+    },
+    {
+      "id": "manoj-chhap",
+      "name": "Manoj Sharma",
+      "nameHindi": "मनोज शर्मा",
+      "village": "Chhap",
+      "villageHindi": "छाप",
+      "role": "Shop Owner",
+      "rating": 5,
+      "verified": true,
+      "quote": "I run a commercial shop and need clean jars daily. Getting sanitized jars and pure water at ₹25 regular price is the most trustworthy deal in the Siwan area."
+    },
+    {
+      "id": "amit-nathuchhap",
+      "name": "Amit Singh",
+      "nameHindi": "अमित सिंह",
+      "village": "Nathu Chhap",
+      "villageHindi": "नत्थू छाप",
+      "rating": 5,
+      "verified": true,
+      "quote": "Ordered 50 jars and bottle cartons for my sister wedding last month. Delivered right on schedule with zero unnecessary jar deposits. Top-notch service!"
+    }
+  ],
+  "footer": {
+    "brandDesc": "Ashish Sudh Jal is the premier drinking water provider in Sarsar, Siwan. Committed to supplying pure, hygienic, and affordable mineral RO water to every home and enterprise.",
+    "quickLinksTitle": "Quick Links",
+    "coverageTitle": "Delivery Villages",
+    "contactTitle": "Contact & Support",
+    "allRightsReserved": "All rights reserved"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Completed successfully",
+    "back": "Back",
+    "next": "Next",
+    "callNow": "Call Now",
+    "orderNow": "Order Now",
+    "rupee": "₹",
+    "perJar": "per jar",
+    "litres": "Litres",
+    "bottles": "Bottles",
+    "jars": "Jars",
+    "guests": "Guests",
+    "languageToggle": "हिन्दी"
+  },
+  "whatsappTemplates": {
+    "header": "💧 *Ashish Sudh Jal (Sarsar, Siwan)*\nNew Order Request:",
+    "customerHeading": "👤 *Customer Details:*",
+    "nameLabel": "• Name:",
+    "phoneLabel": "• Phone:",
+    "villageLabel": "• Village:",
+    "landmarkLabel": "• Landmark:",
+    "orderHeading": "📦 *Order Details:*",
+    "normalJarProductTitle": "• Product: 20L Normal RO Water Jar",
+    "chilledJarProductTitle": "• Product: 20L Chilled RO Water Jar",
+    "quantityLabel": "• Quantity:",
+    "oneTimeOrder": "• Order Type: One-time Order",
+    "recurringSubscriptionPrefix": "• Order Type: Recurring Subscription",
+    "rateLabel": "• Rate:",
+    "perJarLabel": "per jar",
+    "recurringDiscountLabel": "• Recurring Discount:",
+    "savingsLabel": "savings",
+    "depositFirstOrder": "• Deposit: ₹150 (Jar + Dispenser - First order only)",
+    "depositExistingCustomer": "• Deposit: ₹0 (Existing customer - No deposit)",
+    "paymentHeading": "💰 *Payment Details (Cash / UPI):*",
+    "waterAmountLabel": "• Water Amount:",
+    "depositAmountLabel": "• Deposit Amount:",
+    "totalSavingsLabel": "• Total Savings:",
+    "totalPayableLabel": "• Total Amount Payable:",
+    "bulkBottlesProductTitle": "• Product: Packaged Water Bottles (250ml / 500ml / 1L)",
+    "bulkEstimatedQuantityLabel": "• Quantity:",
+    "bulkRateText": "• Rate: Contact for bulk pricing (Custom quote)",
+    "eventHeading": "🎉 *Event Details:*",
+    "eventTypeLabel": "• Event Type:",
+    "eventDateLabel": "• Event Date:",
+    "eventGuestsLabel": "• Estimated Guests:",
+    "eventWaterLabel": "• Estimated Water:",
+    "eventLitresSuffix": "Litres",
+    "eventZeroDeposit": "• Deposit: ₹0 (Zero deposit for event orders)",
+    "eventRateText": "• Rate: Custom Quote",
+    "eventDefaultType": "Event / Party",
+    "eventDateUnavailable": "N/A",
+    "eventGuestsUnspecified": "N/A",
+    "specialInstructionsHeading": "📝 *Special Instructions:*",
+    "closingCta": "Please confirm the order and delivery SLA. Thank you!",
+    "frequencies": {
+      "daily": "Daily",
+      "alternate_days": "Alternate Days",
+      "weekly": "Weekly",
+      "default": "Recurring"
+    },
+    "units": {
+      "jarSingular": "Jar",
+      "jarPlural": "Jars",
+      "cartonSingular": "Carton",
+      "cartonPlural": "Cartons"
+    }
+  }
+}

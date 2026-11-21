@@ -1,9 +1,9 @@
-export interface SavedCustomerDetails {
+export type SavedCustomerDetails = {
   customerName: string;
   customerPhone: string;
   villageId: string;
   landmark: string;
-}
+};
 
 export interface IPreferenceRepository {
   getLanguage(): string | null;

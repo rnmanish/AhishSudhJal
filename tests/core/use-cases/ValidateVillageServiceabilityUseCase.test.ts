@@ -30,12 +30,12 @@ class MockVillageRepository implements IVillageRepository {
     return this.villages;
   }
 
-  async getById(id: string): Promise<VillageCoverage | null> {
-    return this.villages.find((v) => v.getId() === id) ?? null;
+  async getById(villageId: string): Promise<VillageCoverage | null> {
+    return this.villages.find((village) => village.getId() === villageId) ?? null;
   }
 
   async search(query: string): Promise<VillageCoverage[]> {
-    return this.villages.filter((v) => v.matchesQuery(query));
+    return this.villages.filter((village) => village.matchesQuery(query));
   }
 
   async isServiceable(query: string): Promise<boolean> {

@@ -2,10 +2,10 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import type {
   SavedCustomerDetails,
 } from '../../src/core/domain/repositories/IPreferenceRepository';
-import type { IStorageLike } from '../../src/infrastructure/repositories/LocalStoragePreferenceRepository';
+import type { StorageLike } from '../../src/infrastructure/repositories/LocalStoragePreferenceRepository';
 import { LocalStoragePreferenceRepository } from '../../src/infrastructure/repositories/LocalStoragePreferenceRepository';
 
-class MockStorage implements IStorageLike {
+class MockStorage implements StorageLike {
   private readonly store = new Map<string, string>();
 
   public getItem(key: string): string | null {
@@ -259,7 +259,7 @@ describe('LocalStoragePreferenceRepository', () => {
 
   describe('Storage Fault Tolerance (Security/Quota Errors)', () => {
     it('should gracefully handle storage.getItem throwing errors', () => {
-      const faultyStorage: IStorageLike = {
+      const faultyStorage: StorageLike = {
         getItem: () => {
           throw new Error('SecurityError: Access Denied');
         },
@@ -273,7 +273,7 @@ describe('LocalStoragePreferenceRepository', () => {
     });
 
     it('should gracefully handle storage.setItem throwing QuotaExceededError', () => {
-      const quotaExceededStorage: IStorageLike = {
+      const quotaExceededStorage: StorageLike = {
         getItem: () => null,
         setItem: () => {
           throw new Error('DOMException: QuotaExceededError');
@@ -287,7 +287,7 @@ describe('LocalStoragePreferenceRepository', () => {
     });
 
     it('should gracefully handle storage.removeItem throwing errors', () => {
-      const faultyStorage: IStorageLike = {
+      const faultyStorage: StorageLike = {
         getItem: () => null,
         setItem: () => {},
         removeItem: () => {

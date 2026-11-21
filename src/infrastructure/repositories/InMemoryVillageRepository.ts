@@ -28,12 +28,12 @@ export class InMemoryVillageRepository implements IVillageRepository {
     return [...this.villages];
   }
 
-  public async getById(id: string): Promise<VillageCoverage | null> {
-    const cleanId = id.trim().toLowerCase();
+  public async getById(villageId: string): Promise<VillageCoverage | null> {
+    const cleanId = villageId.trim().toLowerCase();
     if (!cleanId) {
       return null;
     }
-    const match = this.villages.find((v) => v.getId().toLowerCase() === cleanId);
+    const match = this.villages.find((village) => village.getId().toLowerCase() === cleanId);
     return match ?? null;
   }
 
@@ -42,7 +42,7 @@ export class InMemoryVillageRepository implements IVillageRepository {
     if (!cleanQuery) {
       return [];
     }
-    return this.villages.filter((v) => v.matchesQuery(cleanQuery));
+    return this.villages.filter((village) => village.matchesQuery(cleanQuery));
   }
 
   public async isServiceable(query: string): Promise<boolean> {
