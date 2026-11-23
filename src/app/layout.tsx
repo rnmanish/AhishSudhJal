@@ -1,6 +1,13 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { englishDict, hindiDict } from '../locales';
+import { AppProviders } from '../infrastructure/di/AppProviders';
+
+export const viewport: Viewport = {
+  themeColor: '#051329',
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: `${hindiDict.brand.name} (${englishDict.brand.name}) | ${hindiDict.meta.plantLocation}`,
@@ -10,11 +17,13 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 }) {
   return (
-    <html lang="hi">
-      <body>{children}</body>
+    <html lang="hi" className="dark">
+      <body>
+        <AppProviders>{children}</AppProviders>
+      </body>
     </html>
   );
 }
