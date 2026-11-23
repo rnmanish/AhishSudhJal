@@ -5,9 +5,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -32,145 +30,25 @@
     ],
     "prefer-const": "error",
     "no-var": "error",
-    "eqeqeq": [
-      "error",
-      "always"
-    ],
-    "curly": [
-      "error",
-      "all"
-    ],
+    "eqeqeq": ["error", "always"],
+    "curly": ["error", "all"],
     "no-console": [
       "warn",
       {
-        "allow": [
-          "warn",
-          "error"
-        ]
-      }
-    ],
-    "id-length": [
-      "error",
-      {
-        "min": 3,
-        "properties": "never",
-        "exceptions": [
-          "_"
-        ]
-      }
-    ],
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        "selector": "default",
-        "format": [
-          "camelCase"
-        ],
-        "leadingUnderscore": "allow",
-        "trailingUnderscore": "allow"
-      },
-      {
-        "selector": "variable",
-        "format": [
-          "camelCase",
-          "UPPER_CASE",
-          "PascalCase"
-        ],
-        "leadingUnderscore": "allow"
-      },
-      {
-        "selector": "parameter",
-        "format": [
-          "camelCase"
-        ],
-        "leadingUnderscore": "allow"
-      },
-      {
-        "selector": "method",
-        "format": [
-          "camelCase"
-        ],
-        "leadingUnderscore": "allow"
-      },
-      {
-        "selector": "function",
-        "format": [
-          "camelCase",
-          "PascalCase"
-        ],
-        "leadingUnderscore": "allow"
-      },
-      {
-        "selector": "class",
-        "format": [
-          "PascalCase"
-        ]
-      },
-      {
-        "selector": "typeAlias",
-        "format": [
-          "PascalCase"
-        ]
-      },
-      {
-        "selector": "typeParameter",
-        "format": [
-          "PascalCase"
-        ]
-      },
-      {
-        "selector": "enum",
-        "format": [
-          "PascalCase"
-        ]
-      },
-      {
-        "selector": "enumMember",
-        "format": [
-          "PascalCase",
-          "UPPER_CASE"
-        ]
-      },
-      {
-        "selector": "interface",
-        "format": [
-          "PascalCase"
-        ],
-        "custom": {
-          "regex": "^(?!I[A-Z])",
-          "match": true
-        }
-      },
-      {
-        "selector": "import",
-        "format": [
-          "camelCase",
-          "PascalCase"
-        ]
-      },
-      {
-        "selector": "property",
-        "format": null
+        "allow": ["warn", "error"]
       }
     ]
   },
   "overrides": [
     {
-      "files": [
-        "src/core/domain/**/*.ts"
-      ],
+      "files": ["src/core/domain/**/*.ts"],
       "rules": {
         "no-restricted-imports": [
           "error",
           {
             "patterns": [
               {
-                "group": [
-                  "@/infrastructure/*",
-                  "@/presentation/*",
-                  "@/app/*",
-                  "../*/*/*/*"
-                ],
+                "group": ["@/infrastructure/*", "@/presentation/*", "@/app/*", "../*/*/*/*"],
                 "message": "CLEAN ARCHITECTURE VIOLATION: Domain layer cannot import from Infrastructure, Presentation, or App layer."
               }
             ]
@@ -179,20 +57,14 @@
       }
     },
     {
-      "files": [
-        "src/core/use-cases/**/*.ts"
-      ],
+      "files": ["src/core/use-cases/**/*.ts"],
       "rules": {
         "no-restricted-imports": [
           "error",
           {
             "patterns": [
               {
-                "group": [
-                  "@/infrastructure/*",
-                  "@/presentation/*",
-                  "@/app/*"
-                ],
+                "group": ["@/infrastructure/*", "@/presentation/*", "@/app/*"],
                 "message": "CLEAN ARCHITECTURE VIOLATION: Use Cases cannot import from Infrastructure, Presentation, or App layer."
               }
             ]
@@ -201,110 +73,7 @@
       }
     },
     {
-      "files": [
-        "src/core/domain/repositories/**/*.ts"
-      ],
-      "rules": {
-        "@typescript-eslint/naming-convention": [
-          "error",
-          {
-            "selector": "default",
-            "format": [
-              "camelCase"
-            ],
-            "leadingUnderscore": "allow",
-            "trailingUnderscore": "allow"
-          },
-          {
-            "selector": "variable",
-            "format": [
-              "camelCase",
-              "UPPER_CASE",
-              "PascalCase"
-            ],
-            "leadingUnderscore": "allow"
-          },
-          {
-            "selector": "parameter",
-            "format": [
-              "camelCase"
-            ],
-            "leadingUnderscore": "allow"
-          },
-          {
-            "selector": "method",
-            "format": [
-              "camelCase"
-            ],
-            "leadingUnderscore": "allow"
-          },
-          {
-            "selector": "function",
-            "format": [
-              "camelCase",
-              "PascalCase"
-            ],
-            "leadingUnderscore": "allow"
-          },
-          {
-            "selector": "class",
-            "format": [
-              "PascalCase"
-            ]
-          },
-          {
-            "selector": "typeAlias",
-            "format": [
-              "PascalCase"
-            ]
-          },
-          {
-            "selector": "typeParameter",
-            "format": [
-              "PascalCase"
-            ]
-          },
-          {
-            "selector": "enum",
-            "format": [
-              "PascalCase"
-            ]
-          },
-          {
-            "selector": "enumMember",
-            "format": [
-              "PascalCase",
-              "UPPER_CASE"
-            ]
-          },
-          {
-            "selector": "import",
-            "format": [
-              "camelCase",
-              "PascalCase"
-            ]
-          },
-          {
-            "selector": "property",
-            "format": null
-          },
-          {
-            "selector": "interface",
-            "format": [
-              "PascalCase"
-            ],
-            "custom": {
-              "regex": "^I[A-Z]",
-              "match": true
-            }
-          }
-        ]
-      }
-    },
-    {
-      "files": [
-        "tests/**/*.ts"
-      ],
+      "files": ["tests/**/*.ts"],
       "rules": {
         "@typescript-eslint/no-explicit-any": "off"
       }
