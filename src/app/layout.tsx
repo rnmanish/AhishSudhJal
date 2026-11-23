@@ -1,19 +1,29 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { englishDict, hindiDict } from '../locales';
+import { AppProviders } from '../infrastructure/di/AppProviders';
+
+export const viewport: Viewport = {
+  themeColor: '#051329',
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
-  title: 'आशीष शुद्ध जल (Ashish Sudh Jal) | सरसर, सिवान',
-  description: 'सरसर, पुरैना और सिवान के गांवों में 20L आरओ मिनरल वाटर जार और पैकेज्ड ड्रिंकिंग वाटर की विश्वसनीय डोरस्टेप डिलीवरी।',
+  title: `${hindiDict.brand.name} (${englishDict.brand.name}) | ${hindiDict.meta.plantLocation}`,
+  description: hindiDict.meta.description,
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 }) {
   return (
-    <html lang="hi">
-      <body>{children}</body>
+    <html lang="hi" className="dark">
+      <body>
+        <AppProviders>{children}</AppProviders>
+      </body>
     </html>
   );
 }

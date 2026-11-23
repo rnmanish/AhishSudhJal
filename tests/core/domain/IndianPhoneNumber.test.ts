@@ -18,13 +18,13 @@ describe('IndianPhoneNumber Value Object', () => {
   });
 
   it('handles +91 prefix, leading 0, hyphens, and spaces', () => {
-    const p1 = new IndianPhoneNumber('+91 82358-82384');
-    expect(p1.getDigits()).toBe('8235882384');
+    const phoneWithPrefix = new IndianPhoneNumber('+91 82358-82384');
+    expect(phoneWithPrefix.getDigits()).toBe('8235882384');
 
-    const p2 = new IndianPhoneNumber('08235882384');
-    expect(p2.getDigits()).toBe('8235882384');
+    const phoneWithLeadingZero = new IndianPhoneNumber('08235882384');
+    expect(phoneWithLeadingZero.getDigits()).toBe('8235882384');
 
-    const p3 = new IndianPhoneNumber('918235882384');
-    expect(p3.getDigits()).toBe('8235882384');
+    const phoneWithCountryCode = new IndianPhoneNumber('918235882384');
+    expect(phoneWithCountryCode.getDigits()).toBe('8235882384');
   });
 });

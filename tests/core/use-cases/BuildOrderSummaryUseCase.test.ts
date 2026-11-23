@@ -28,12 +28,12 @@ class MockProductRepository implements IProductRepository {
     return this.products;
   }
 
-  async getById(id: string): Promise<Product | null> {
-    return this.products.find((p) => p.getId() === id) ?? null;
+  async getById(productId: string): Promise<Product | null> {
+    return this.products.find((product) => product.getId() === productId) ?? null;
   }
 
   async getByCategory(category: ProductCategory): Promise<Product[]> {
-    return this.products.filter((p) => p.getCategory() === category);
+    return this.products.filter((product) => product.getCategory() === category);
   }
 }
 
