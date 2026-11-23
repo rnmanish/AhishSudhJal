@@ -3,14 +3,14 @@ import type {
   SavedCustomerDetails,
 } from '../../core/domain/repositories/IPreferenceRepository';
 
-export interface IStorageLike {
+export interface StorageLike {
   getItem(key: string): string | null;
   setItem(key: string, value: string): void;
   removeItem(key: string): void;
 }
 
 export interface LocalStoragePreferenceOptions {
-  readonly storage?: IStorageLike;
+  readonly storage?: StorageLike;
   readonly languageKey?: string;
   readonly customerDetailsKey?: string;
 }
@@ -19,7 +19,7 @@ export class LocalStoragePreferenceRepository implements IPreferenceRepository {
   public static readonly DEFAULT_LANGUAGE_KEY = 'asj_lang';
   public static readonly DEFAULT_CUSTOMER_DETAILS_KEY = 'asj_customer_details';
 
-  private readonly explicitStorage?: IStorageLike;
+  private readonly explicitStorage?: StorageLike;
   private readonly languageKey: string;
   private readonly customerDetailsKey: string;
 
@@ -175,7 +175,7 @@ export class LocalStoragePreferenceRepository implements IPreferenceRepository {
     }
   }
 
-  private resolveStorage(): IStorageLike | null {
+  private resolveStorage(): StorageLike | null {
     if (this.explicitStorage) {
       return this.explicitStorage;
     }

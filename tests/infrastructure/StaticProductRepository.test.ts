@@ -11,7 +11,7 @@ describe('StaticProductRepository', () => {
     expect(products).toHaveLength(4);
     expect(PRODUCTS).toHaveLength(4);
 
-    const ids = products.map((p) => p.getId());
+    const ids = products.map((product) => product.getId());
     expect(ids).toEqual(['jar-normal', 'jar-chilled', 'bulk-bottles', 'event-supply']);
   });
 
@@ -125,7 +125,7 @@ describe('StaticProductRepository', () => {
     it('should filter jar category correctly', async () => {
       const jars = await repository.getByCategory('jar');
       expect(jars).toHaveLength(2);
-      expect(jars.map((j) => j.getId())).toEqual(['jar-normal', 'jar-chilled']);
+      expect(jars.map((jar) => jar.getId())).toEqual(['jar-normal', 'jar-chilled']);
     });
 
     it('should filter bulk_bottles category correctly', async () => {
@@ -228,11 +228,11 @@ describe('StaticProductRepository', () => {
       const all = await repository.getAll(true);
 
       const roServiceProduct = all.find(
-        (p) =>
-          p.getId().toLowerCase().includes('service') ||
-          p.getId().toLowerCase().includes('repair') ||
-          p.getName('en').toLowerCase().includes('servicing') ||
-          p.getDescription('en').toLowerCase().includes('filter replacement')
+        (product) =>
+          product.getId().toLowerCase().includes('service') ||
+          product.getId().toLowerCase().includes('repair') ||
+          product.getName('en').toLowerCase().includes('servicing') ||
+          product.getDescription('en').toLowerCase().includes('filter replacement')
       );
 
       expect(roServiceProduct).toBeUndefined();

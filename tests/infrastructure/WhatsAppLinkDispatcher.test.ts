@@ -72,17 +72,17 @@ describe('WhatsAppLinkDispatcher', () => {
     });
 
     it('normalizes formatted and 10-digit Indian numbers correctly', () => {
-      const d1 = new WhatsAppLinkDispatcher('+91 82358 82384');
-      expect(d1.getBusinessPhoneNumber()).toBe('918235882384');
+      const dispatcherWithPlus = new WhatsAppLinkDispatcher('+91 82358 82384');
+      expect(dispatcherWithPlus.getBusinessPhoneNumber()).toBe('918235882384');
 
-      const d2 = new WhatsAppLinkDispatcher('8235882384');
-      expect(d2.getBusinessPhoneNumber()).toBe('918235882384');
+      const dispatcherPlain = new WhatsAppLinkDispatcher('8235882384');
+      expect(dispatcherPlain.getBusinessPhoneNumber()).toBe('918235882384');
 
-      const d3 = new WhatsAppLinkDispatcher('08235882384');
-      expect(d3.getBusinessPhoneNumber()).toBe('918235882384');
+      const dispatcherWithZero = new WhatsAppLinkDispatcher('08235882384');
+      expect(dispatcherWithZero.getBusinessPhoneNumber()).toBe('918235882384');
 
-      const d4 = new WhatsAppLinkDispatcher('919876543210');
-      expect(d4.getBusinessPhoneNumber()).toBe('919876543210');
+      const dispatcherWithCountryCode = new WhatsAppLinkDispatcher('919876543210');
+      expect(dispatcherWithCountryCode.getBusinessPhoneNumber()).toBe('919876543210');
     });
 
     it('rejects invalid or non-Indian phone numbers defensively', () => {

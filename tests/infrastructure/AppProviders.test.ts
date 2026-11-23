@@ -198,8 +198,8 @@ describe('DI AppProviders and Context Hooks (AppProviders.tsx)', () => {
       let isAvailable = false;
 
       function DirectConsumer() {
-        const c = useContainer();
-        isAvailable = Boolean(c);
+        const containerInstance = useContainer();
+        isAvailable = Boolean(containerInstance);
         return React.createElement('div', null, 'direct');
       }
 

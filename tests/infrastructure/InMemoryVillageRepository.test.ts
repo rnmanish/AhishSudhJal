@@ -209,7 +209,7 @@ describe('InMemoryVillageRepository', () => {
     const byPincode = await repository.search('841226');
     // Sarsar and Puraina both share pincode 841226
     expect(byPincode.length).toBeGreaterThanOrEqual(2);
-    const ids = byPincode.map((v) => v.getId());
+    const ids = byPincode.map((village) => village.getId());
     expect(ids).toContain('sarsar');
     expect(ids).toContain('puraina');
 

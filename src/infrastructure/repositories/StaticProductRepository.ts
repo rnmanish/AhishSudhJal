@@ -33,15 +33,15 @@ export class StaticProductRepository implements IProductRepository {
     if (includeUnavailable) {
       return [...this.products];
     }
-    return this.products.filter((p) => p.isAvailable());
+    return this.products.filter((product) => product.isAvailable());
   }
 
-  public async getById(id: string, includeUnavailable = false): Promise<Product | null> {
-    const cleanId = id.trim().toLowerCase();
+  public async getById(productId: string, includeUnavailable = false): Promise<Product | null> {
+    const cleanId = productId.trim().toLowerCase();
     if (!cleanId) {
       return null;
     }
-    const match = this.products.find((p) => p.getId().toLowerCase() === cleanId);
+    const match = this.products.find((product) => product.getId().toLowerCase() === cleanId);
     if (!match) {
       return null;
     }
@@ -56,7 +56,7 @@ export class StaticProductRepository implements IProductRepository {
     includeUnavailable = false
   ): Promise<Product[]> {
     return this.products.filter(
-      (p) => p.getCategory() === category && (includeUnavailable || p.isAvailable())
+      (product) => product.getCategory() === category && (includeUnavailable || product.isAvailable())
     );
   }
 }
