@@ -43,6 +43,7 @@ export interface AppTranslations {
     readonly plantAddress: string;
     readonly hotline: string;
     readonly hotlineNumber: string;
+    readonly whatsappNumber: string;
   };
   readonly nav: {
     readonly home: string;
@@ -338,6 +339,7 @@ function buildTranslations(lang: SupportedLanguage): AppTranslations {
       plantAddress: dict.brand.plantAddress,
       hotline: dict.brand.hotline,
       hotlineNumber: dict.brand.hotlineNumber,
+      whatsappNumber: dict.brand.whatsappNumber,
     },
     nav: dict.nav,
     hero: {
